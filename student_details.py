@@ -12,7 +12,7 @@ class Student:
 students_details = []
 
 # get user input frome students
-for i in range(70):
+for i in range(2):
     print(f"\nEnter details for student {i+1}:")
     name = input("Full Name: ")
     age = int(input("Age: "))
@@ -24,3 +24,5 @@ for i in range(70):
     student.getdetails(name, age, address, studentId)
     students_details.append(student)
     print(f"Student {i+1} details added successfully.")
+
+   
