@@ -1,0 +1,21 @@
+name: Auto Push
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  auto-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Auto commit and push
+        run: |
+          git config --global user.name "uthayapalika"
+          git config --global user.email "uthayapalika@gmail.com"
+          git add .
+          git commit -m "Auto update"
+          git push
