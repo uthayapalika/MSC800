@@ -5,17 +5,23 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   auto-push:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Auto commit and push
         run: |
           git config --global user.name "uthayapalika"
           git config --global user.email "uthayapalika@gmail.com"
           git add .
-          git commit -m "Auto update"
-          git push
+          git commit -m "Auto update" || echo "No changes to commit"
+          git push origin main
