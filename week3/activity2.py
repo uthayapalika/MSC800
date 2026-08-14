@@ -9,7 +9,7 @@ print(f'Total number of lines in the file: {len(lines)}')
 #total number of different flowers available 
 different_flowers = set(line.split(',')[0] for line in lines)
 print(f'Total number of different flowers in the dataset: {len(different_flowers)}')
-#total different flowers in the dataset
+#name  different flowers in the dataset
 flower_names = set(line.split(',')[0] for line in lines)
-print(f'Total number of different flowers in the dataset: {len(flower_names)}')
+print(f'Flower names in the dataset: {flower_names}')
 data.close()
