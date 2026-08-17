@@ -67,4 +67,32 @@ class CurrencyManagement:
 # Create object
 userdata = CurrencyManagement()
 #get user inputs
-userdata.exchange_transaction()
+while True:
+
+    print("\n===== Money Exchange System =====")
+    print("1. Add Customer")
+    print("2. Add Currency")
+    print("3. Add Exchange Rate")
+    print("4. Add Transaction")
+    print("5. Exit")
+
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        userdata.add_customer_details()
+
+    elif choice == "2":
+        userdata.add_currency_details()
+
+    elif choice == "3":
+        userdata.add_exchange_rate_details()
+
+    elif choice == "4":
+        userdata.exchange_transaction()
+
+    elif choice == "5":
+        print("Thank you!")
+        break
+
+    else:
+        print("Invalid choice!")
