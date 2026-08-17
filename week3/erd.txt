@@ -1,0 +1,17 @@
+1)
+1	Stdent – address, contact_email, contact number
+	Lecturer – contact_number, email
+
+
+2)	There are  5 entities here they are :
+1)Student
+2)Entrollment
+3)Lecturer
+4)Subjects
+5)Lecture
+
+
+Relationship method:
+One student enrol one  or more lecturer
+one lecturer lecture many sujects
+ 
