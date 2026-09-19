@@ -32,9 +32,9 @@ config3 = UniversityConfig()
 
 # Set configuration using config1
 config1.set_config(
-    "Auckland University",
+    "Yoobee College of Creative Innovation",
     "2026",
-    "Semester 2"
+    "Semester 1"
 )
 
 # Display configuration using config2
