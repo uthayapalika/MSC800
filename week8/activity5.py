@@ -65,7 +65,7 @@ travel_package = (
     .set_hotel("3 star hotel")
     .set_transport("Flight and Cruise")
     .set_mealplan("All-Inclusive")
-    .add_activities(["Tour", "Snorkeling", "Hiking"])
+    .add_activities(["Tour", "Snorkeling", "Hiking", "Ice Climbing","Whale Watching","penguin Watching","plunge in Ice Water"])
     .set_insurance(True)
     .build())
 
